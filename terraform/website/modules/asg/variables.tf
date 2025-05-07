@@ -13,7 +13,8 @@ variable "image_id" {
   description = "The id of the machine image (AMI) to use for the server."
   type        = map(string)
   default = {
-    eu-north-1 = "ami-0dd574ef87b79ac6c"
+    eu-north-1 = "ami-0dd574ef87b79ac6c",
+    us-east-1 = "ami-0f88e80871fd81e91"
   }
 }
 

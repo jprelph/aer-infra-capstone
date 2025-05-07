@@ -9,7 +9,7 @@ resource "aws_launch_template" "web-lt" {
   }
 
   network_interfaces {
-    associate_public_ip_address = false
+    associate_public_ip_address = true
     security_groups = [var.allow_ssh_http_id]
   }
   

@@ -42,7 +42,7 @@ module "autoscaling-group" {
 
   image_id = {
     eu-north-1 = "ami-0dd574ef87b79ac6c",
-    us-east-1 = "ami-0be2609ba883822ec"
+    us-east-1 = "ami-0f88e80871fd81e91"
   }
 
   instance_type      = "t3.micro"
