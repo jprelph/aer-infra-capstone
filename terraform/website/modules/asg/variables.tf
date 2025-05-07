@@ -69,3 +69,7 @@ variable "subnet_b_id" {
 variable "load_balancer_id" {
   type = string
 }
+
+variable "target_group_arn" {
+  type = string
+}

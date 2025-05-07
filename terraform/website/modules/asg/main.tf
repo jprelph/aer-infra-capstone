@@ -21,7 +21,7 @@ resource "aws_autoscaling_group" "auto-scaling" {
   min_size = var.instance_count_min
   max_size = var.instance_count_max
   health_check_type = "ELB"
-  load_balancers = [var.load_balancer_id]
+  target_group_arns = [var.target_group_arn]
 
   launch_template {
     id      = aws_launch_template.web-lt.id
